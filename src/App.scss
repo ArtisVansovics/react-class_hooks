@@ -4,7 +4,38 @@
 
 .box {
   display: flex;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 32px;
   gap: 16px;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  background-color: skyblue;
+}
+
+.color-box--absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.clone-wrapper {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+
+.large-wrapper {
+  width: 100%;
+  height: 300px;
+  border: 2px solid black;
+  position: relative;
 }
